@@ -5,15 +5,15 @@ import mysql.connector
 
 # Set up Spotify API credentials
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
-     client_id='be90536807724e448d3187e2722366f2',  # Replace with your Client ID
-    client_secret='b67ef4d7c5b441e0babdd7a7c9e2f649'  # Replace with your Client Secret
+     client_id='         ',  # Replace with your Client ID
+    client_secret='                  '  # Replace with your Client Secret
 ))
 
 # MySQL Database Connection
 db_config = {
     'host': 'localhost',           # Change to your MySQL host
     'user': 'root',       # Replace with your MySQL username
-    'password': 'VSDgokul',   # Replace with your MySQL password
+    'password': '     ',   # Replace with your MySQL password
     'database': 'spotify_db'       # Replace with your database name
 }
 
@@ -67,5 +67,6 @@ for track_url in track_urls:
 # Close the connection
 cursor.close()
 connection.close()
+
 
 print("All tracks have been processed and inserted into the database.")
